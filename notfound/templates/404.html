@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>404 Página não encontrada</title>
+	<style>
+		body {
+			background-color: #F5F5F5;
+			font-family: Arial, sans-serif;
+			color: #555;
+		}
+		h1 {
+			font-size: 48px;
+			margin-top: 100px;
+			text-align: center;
+			color: #333;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			text-align: center;
+			padding: 40px 0;
+		}
+		.btn {
+			display: inline-block;
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			margin-top: 20px;
+		}
+		.btn:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>404</h1>
+		<p>Oops! A página que você está procurando não foi encontrada.</p>
+		<a href="{% url 'homepage' %}" class="btn">Voltar à página inicial</a>
+	</div>
+</body>
+</html>

@@ -10,6 +10,8 @@ from home import views as views_homepage
 from double import views as views_double
 from pressell import views as views_pressell
 from aviatrix import views as views_aviatrix
+from notfound import views as views_404
+
 
 urlpatterns = [
   # URLS DEFAULT
@@ -31,3 +33,4 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+

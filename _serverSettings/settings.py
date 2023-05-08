@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'home',
     'double',
     'pressell',
-    'aviatrix'
+    'aviatrix',
+    'notfound'
+
 
 ]
 
@@ -56,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'middleware.middleware.NotFoundMiddleware',
 ]
 
 ROOT_URLCONF = '_serverSettings.urls'

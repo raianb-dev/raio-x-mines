@@ -6,7 +6,8 @@ STATIC_ROOT = BASE_DIR / 'static'
 ...
 
 # Adicione esta linha para especificar a pasta static como um diret�rio est�tico
-STATIC_DIRS = [STATIC_ROOT]
+STATICFILES_DIRS = [STATIC_ROOT]
+
 
 ...
 
